@@ -13,16 +13,16 @@ package Singleton;
  * @time: 20:29
  * @modified by:
  */
-public class Singleton1 {
-    private static volatile Singleton1 instance = null;
+public class DoubleCheckSingleton  {
+    private static volatile DoubleCheckSingleton instance = null;
 
-    private Singleton1 (){}
+    private DoubleCheckSingleton (){}
 
-    public static  Singleton1 getInstance() {
+    public static  DoubleCheckSingleton getInstance() {
         if(instance == null){
-            synchronized (Singleton1.class){
+            synchronized (DoubleCheckSingleton.class){
                 if(instance == null){
-                    instance = new Singleton1();
+                    instance = new DoubleCheckSingleton();
                 }
             }
         }

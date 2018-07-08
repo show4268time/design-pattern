@@ -12,7 +12,7 @@ package Singleton;
  * @time: 20:31
  * @modified by:
  */
-public enum Singleton3 {
+public enum EnumSingleton {
     INSTANCE;
 
     public void whateverMethod() {

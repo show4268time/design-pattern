@@ -11,14 +11,14 @@ package Singleton;
  * @time: 20:40
  * @modified by:
  */
-public class Singleton2 {
-    private Singleton2(){}
+public class StaticInnerSingleton {
+    private StaticInnerSingleton(){}
 
     private static class SingletonHolder{
-        private static Singleton2 instance = new Singleton2();
+        private static StaticInnerSingleton instance = new StaticInnerSingleton();
     }
 
-    public static Singleton2 getInstance() {
+    public static StaticInnerSingleton getInstance() {
         return SingletonHolder.instance;
     }
 }
