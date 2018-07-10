@@ -1,5 +1,7 @@
 package Singleton;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -28,7 +30,18 @@ public class RegisterSingleton {
     protected RegisterSingleton() {
     }
 
-    public static RegisterSingleton getRegisterSingleton(String name) {
-        return null;
+    public static RegisterSingleton getRegisterSingleton(String className) {
+        if(StringUtils.isBlank(className)){
+            return null;
+        }else {
+            if(singletonObjects.get(className) == null){
+                try {
+                    singletonObjects.put(className, Class.forName(className).newInstance());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            return (RegisterSingleton) singletonObjects.get(className);
+        }
     }
 }
