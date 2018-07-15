@@ -1,6 +1,6 @@
 package Factory;
 
-import Factory.Product.Shape;
+import Factory.Product.Logger;
 
 /**
  * @program: design-pattern
@@ -8,6 +8,6 @@ import Factory.Product.Shape;
  * @author: showtime
  * @create: 2018-07-15 14:37
  **/
-public interface Factory {
-    Shape getShape();
+public interface LoggerFactory {
+    Logger createLogger();
 }
