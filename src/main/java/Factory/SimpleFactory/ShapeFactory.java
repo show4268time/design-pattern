@@ -6,6 +6,9 @@ import Factory.Product.Square;
 import Factory.Product.Shape;
 import org.apache.commons.lang3.StringUtils;
 
+/**
+ * 工厂类-图形工厂
+ */
 public class ShapeFactory {
     public static Shape getShape(String name){
         if(StringUtils.isBlank(name)){
