@@ -13,6 +13,6 @@ import Factory.Product.interfaces.TextField;
  */
 public class SpringTextField implements TextField{
     public void display() {
-        System.out.print("浅蓝色的文本框 ");
+        System.out.print("显示浅绿色的文本框 ");
     }
 }
