@@ -13,7 +13,7 @@ import Factory.Product.interfaces.TextField;
  * @time: 20:21
  * @modified by:
  */
-public class AbstracFactoryTest {
+public class AbstractFactoryTest {
     public static void main(String args[]){
         AbstractFactory abstractFactory;
         Button button;
