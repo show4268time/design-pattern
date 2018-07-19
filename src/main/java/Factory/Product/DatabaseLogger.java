@@ -1,5 +1,7 @@
 package Factory.Product;
 
+import Factory.Product.interfaces.Logger;
+
 /**
  * @program: design-pattern
  * @description: 数据库日志记录器：具体产品

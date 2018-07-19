@@ -3,7 +3,7 @@ package Factory.SimpleFactory;
 import Factory.Product.Circle;
 import Factory.Product.Rectangle;
 import Factory.Product.Square;
-import Factory.Product.Shape;
+import Factory.Product.interfaces.Shape;
 import org.apache.commons.lang3.StringUtils;
 
 /**

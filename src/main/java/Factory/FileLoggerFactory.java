@@ -1,7 +1,7 @@
 package Factory;
 
 import Factory.Product.FileLogger;
-import Factory.Product.Logger;
+import Factory.Product.interfaces.Logger;
 /**
  * @program: design-pattern
  * @description: 文件日志记录器工厂类：具体工厂

@@ -1,5 +1,7 @@
 package Factory.Product;
 
+import Factory.Product.interfaces.Shape;
+
 /**
  * 具体产品-具体图形类-长方形
  */

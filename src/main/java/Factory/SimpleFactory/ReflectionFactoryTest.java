@@ -1,7 +1,7 @@
 package Factory.SimpleFactory;
 
 import Factory.Product.Circle;
-import Factory.Product.Shape;
+import Factory.Product.interfaces.Shape;
 
 public class ReflectionFactoryTest {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, ClassNotFoundException {

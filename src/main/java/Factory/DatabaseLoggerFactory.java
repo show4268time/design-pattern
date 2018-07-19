@@ -2,7 +2,7 @@ package Factory;
 
 
 import Factory.Product.DatabaseLogger;
-import Factory.Product.Logger;
+import Factory.Product.interfaces.Logger;
 
 /**
  * @program: design-pattern

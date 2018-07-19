@@ -1,6 +1,6 @@
 package Factory.SimpleFactory;
 
-import Factory.Product.Shape;
+import Factory.Product.interfaces.Shape;
 
 /**
  * 这种方式的虽然符合了 开放-关闭原则 ，但是每一次传入的都是产品类的全部路径，这样比较麻烦。

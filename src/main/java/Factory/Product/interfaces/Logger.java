@@ -1,4 +1,4 @@
-package Factory.Product;
+package Factory.Product.interfaces;
 
 /**
  * @program: design-pattern
