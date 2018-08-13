@@ -12,7 +12,11 @@ package Adapter;
 public class AdapterTest {
 
     public static void main(String[] args){
-        LogAdapter logAdapter = new LogAdapter(new Log4jLogger());
-        logAdapter.debug("测试");
+        LogAdapterImpl logAdapterImpl = new LogAdapterImpl(new Log4jLogger());
+        logAdapterImpl.debug("测试");
+
+
+        LogAdapter logAdapter = new LogAdapter();
+        logAdapter.warn("测试");
     }
 }

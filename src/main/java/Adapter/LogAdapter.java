@@ -1,7 +1,6 @@
 package Adapter;
 
 import Adapter.Interface.Log;
-import Adapter.Interface.Logger;
 
 /**
  * Created with IntelliJ IDEA
@@ -9,24 +8,20 @@ import Adapter.Interface.Logger;
  * @description:
  * @author: yaoweihao
  * @date: 2018/8/13
- * @time: 14:14
+ * @time: 19:57
  * @modified by:
  */
-public class LogAdapter implements Log {
-    private Logger logger;
-
-    public LogAdapter(Logger logger){
-        this.logger = logger;
-    }
+public class LogAdapter extends Log4jLogger implements Log{
+    @Override
     public void error(String s) {
-        logger.error(s);
+        System.out.print("LogAdapter日志记录: " + s);
     }
-
+    @Override
     public void debug(String s) {
-        logger.debug(s);
+        System.out.print("LogAdapter日志记录: " + s);
     }
-
+    @Override
     public void warn(String s) {
-        logger.warn(s);
+        System.out.print("LogAdapter日志记录: " + s);
     }
 }
