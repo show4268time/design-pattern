@@ -1,5 +1,7 @@
 package Adapter;
 
+import Adapter.Interface.Logger;
+
 /**
  * Created with IntelliJ IDEA
  *
@@ -9,7 +11,7 @@ package Adapter;
  * @time: 14:11
  * @modified by:
  */
-public class Log4jLogger implements Logger{
+public class Log4jLogger implements Logger {
     public void error(String s) {
         System.out.print("Log4j日志记录: " + s);
     }

@@ -1,5 +1,8 @@
 package Adapter;
 
+import Adapter.Interface.Log;
+import Adapter.Interface.Logger;
+
 /**
  * Created with IntelliJ IDEA
  *

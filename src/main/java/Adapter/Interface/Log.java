@@ -1,4 +1,4 @@
-package Adapter;
+package Adapter.Interface;
 
 /**
  * Created with IntelliJ IDEA
