@@ -13,6 +13,5 @@ public class UserDaoImpl implements UserDaoService{
 
     public void deleteByUserName(String name) {
         System.out.println("删除名称为" + name + "的用户信息成功！");
-
     }
 }

@@ -11,10 +11,12 @@ import java.lang.reflect.Proxy;
  **/
 public class ProxyTest {
     public static void main(String[] args){
+        //实例化被代理类
         UserDaoService userDaoService = new  UserDaoImpl();
+        //实例化代理类
         InvocationHandler handler = new UserLogHandler(userDaoService);
-
-        UserDaoService proxy = (UserDaoService) Proxy.newProxyInstance(userDaoService.getClass().getClassLoader(), new Class[]{UserDaoService.class}, handler);
+        //生成动态代理类
+        UserDaoService proxy = (UserDaoService) Proxy.newProxyInstance(UserDaoService.class.getClassLoader(), new Class[]{UserDaoService.class}, handler);
 
         proxy.findByUserName("showtime");
 
