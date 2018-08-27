@@ -6,14 +6,14 @@ package Decorator;
  * @author: showtime
  * @create: 2018-08-25 21:57
  **/
-public class Decorator implements Component {
-    private Component component;
+public abstract class Decorator implements Component {
+    protected Component component;
 
     public Decorator(Component component){
+        super();
         this.component = component;
     }
 
-    public void sampleOperation() {
-        component.sampleOperation();
-    }
+    public abstract void sampleOperation();
+
 }
