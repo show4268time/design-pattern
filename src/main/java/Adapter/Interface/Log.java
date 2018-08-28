@@ -1,16 +1,21 @@
 package Adapter.Interface;
 
+import java.util.Date;
+
 /**
  * Created with IntelliJ IDEA
  *
- * @description: 日志抽象类
+ * @description: 新增日志
  * @author: yaoweihao
  * @date: 2018/8/13
  * @time: 13:32
  * @modified by:
  */
 public interface Log {
-    void error(String s);
-    void debug(String s);
-    void warn(String s);
+    /**
+     * 新增日志
+     * @param name
+     * @param date
+     */
+     void addLog(String name, Date date);
 }

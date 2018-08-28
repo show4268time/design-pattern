@@ -1,5 +1,9 @@
 package Adapter;
 
+import Adapter.Interface.Logger;
+
+import java.util.Date;
+
 /**
  * Created with IntelliJ IDEA
  *
@@ -12,11 +16,9 @@ package Adapter;
 public class AdapterTest {
 
     public static void main(String[] args){
-        LogAdapterImpl logAdapterImpl = new LogAdapterImpl(new Log4jLogger());
-        logAdapterImpl.debug("测试");
+        Logger logger = new LoggerOperate();
 
-
-        LogAdapter logAdapter = new LogAdapter();
-        logAdapter.warn("测试");
+        LogAdapter logAdapter = new LogAdapter(logger);
+        logAdapter.addLog("showtime", new Date());
     }
 }
